@@ -6,14 +6,11 @@
      import sys
      print(sys.version)
 
-
 *    https://pythonpip.ru/examples/dvoichnyy-poisk-python - бинарный поиск
 
 *    Стоит аккуратней работать с циклом while, в некоторых моментах он может 
      уйти в вечный цикл. Чтобы этого избежать, можно добавить дополнительное 
      условие для выхода. Например, if count > 50: break
-
-
 
 *    Статьи по оформлению профиля на GitHub:
      https://tproger.ru/articles/how-to-prepare-your-github-profile/
