@@ -1,0 +1,24 @@
+Посмотреть, какое число скрывается за символом можно с помощью 
+функции ord(). Например, символу 'F' в кодировке Unicode соответствует 
+число 70.
+
+Узнать версию Python в коде можно из переменной version из модуля sys.
+import sys
+print(sys.version)
+
+
+https://pythonpip.ru/examples/dvoichnyy-poisk-python - бинарный поиск
+
+Стоит аккуратней работать с циклом while, в некоторых моментах он может 
+уйти в вечный цикл. Чтобы этого избежать, можно добавить дополнительное 
+условие для выхода. Например, if count > 50: break
+
+
+
+Статьи по оформлению профиля на GitHub:
+https://tproger.ru/articles/how-to-prepare-your-github-profile/
+https://techrocks.ru/2020/05/13/make-your-github-profile-helpful-in-finding-job/
+
+PEP8 - помошник
+https://habr.com/ru/company/dataart/blog/318776/ https://habr.com/ru/post/251531/
+
