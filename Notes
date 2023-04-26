@@ -17,6 +17,7 @@
      https://techrocks.ru/2020/05/13/make-your-github-profile-helpful-in-finding-job/
 
 *    PEP8 - помошник
-     https://habr.com/ru/company/dataart/blog/318776/ https://habr.com/ru/post/251531/
+     https://habr.com/ru/company/dataart/blog/318776/ 
+     https://habr.com/ru/post/251531/
 
 *    Чтобы узнать границы int, можно воспользоваться функцией np.iinfo (int info):
