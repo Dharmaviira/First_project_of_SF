@@ -33,19 +33,19 @@
 
 # print(f"{users[1][0]} ({users[0][0]}), {users[1][2]} ({users[0][2]})") 
 
-from collections import deque
+# from collections import OrderedDict
 
-def brackets(line):
-    # Напишите тело функции
-    stack = deque()
-    for i in line:
-        if i == "(":
-            stack.append(i)
-        elif i == ")":
-            if len(stack) == 0:
-                return False
-            stack.pop()
-    if len(stack) == 0:
-        return True
-    return False
+# data = [('Ivan', 19),('Mark', 25),('Andrey', 23),('Maria', 20)]
+# # Сортируем по второму значению из кортежа, то есть по возрасту
+# ordered_client_ages = OrderedDict(sorted(data, key=lambda x: x[0]))
+# print(ordered_client_ages)
 
+from collections import OrderedDict
+
+ratings = [('Old York', 3.3), ('New Age', 4.6), ('Old Gold', 3.3), ('General Foods', 4.8),
+           ('Belissimo', 4.5), ('CakeAndCoffee', 4.2), ('CakeOClock', 4.2), ('CakeTime', 4.1),
+           ('WokToWork', 4.9), ('WokAndRice', 4.9), ('Old Wine Cellar', 3.3), ('Nice Cakes', 3.9)]
+
+cafes = OrderedDict(sorted(ratings, key=lambda x: x[1], reverse=True))
+
+print(cafes)
