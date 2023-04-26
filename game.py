@@ -51,11 +51,8 @@ def brackets(brack):
         print("Your brackets in notright.")
         
 print(brackets("(()())"))
-# True
-print(brackets(""))
-# True
-print(brackets("(()()))"))
-# False 
+
+
 
 
                             
