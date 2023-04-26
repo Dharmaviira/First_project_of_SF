@@ -51,3 +51,7 @@
 # print(cafes)
 
 import numpy as np
+
+
+# print(np.iinfo(np.uint64))
+print(np.finfo(np.float128))
