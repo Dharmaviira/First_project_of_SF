@@ -60,7 +60,7 @@ import numpy as np
 # arr = np.array([1,5,2,9,10], dtype=np.int8)
 # print(arr.dtype)
 
-# import numpy as np
+
 # mystery = np.array(
 #     [[-13586,  15203,  28445, -27117,  -1781, -17182, -18049],
 #      [ 25936, -30968,  -1297,  -4593,   6451,  15790,   7181],
@@ -78,4 +78,20 @@ import numpy as np
 # rev = mystery[:, -1][::-1]
 # # trans = mystery.transpose()
 
+# mystery = np.array([ 12279., -26024.,  28745.,  np.nan,  31244.,  -2365.,  -6974.,
+#         -9212., np.nan, -17722.,  16132.,  25933.,  np.nan, -16431.,
+#         29810.], dtype=np.float32)
 
+# nans_index = np.isnan(mystery)
+# n_nan = 0
+# for a in nans_index: 
+#     if a == True: 
+#         n_nan += 1      
+# mystery_new = mystery.copy()
+# mystery_new[np.isnan(mystery_new)] = 0
+# mystery_int = np.int32(mystery)
+# array = np.sort(mystery)
+# table = array.reshape((5,3) , order='F')
+# col = table[:,1]
+
+# print(col)
