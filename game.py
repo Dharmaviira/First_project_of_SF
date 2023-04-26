@@ -33,26 +33,19 @@
 
 # print(f"{users[1][0]} ({users[0][0]}), {users[1][2]} ({users[0][2]})") 
 
+from collections import deque
 
-def brackets(brack):
-    norm = 0
-    
-    for br in brack:
-        rend = []
-        if br == "(":
-            rend.append(br)
-            norm =+ 1
-        elif br == ")":
-            rend.pop(br)
-            norm =- 1
-    if norm == 0:
-        print("Your brackets is right!")
-    else:
-        print("Your brackets in notright.")
-        
-print(brackets("(()())"))
+def brackets(line):
+    # Напишите тело функции
+    stack = deque()
+    for i in line:
+        if i == "(":
+            stack.append(i)
+        elif i == ")":
+            if len(stack) == 0:
+                return False
+            stack.pop()
+    if len(stack) == 0:
+        return True
+    return False
 
-
-
-
-                            
