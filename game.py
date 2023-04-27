@@ -112,15 +112,26 @@ import numpy as np
 # print(select)
 # print(triplet)
 
-def get_chess(a):
+# def get_chess(a):
+#     if a%2 == 0:
+#         b = (a,a)   
+#         arr = np.zeros(b)
+#         arr[::2 , ::-2] = 1
+#         arr[1::2, ::2] = 1
+#     elif a%2 == 0 :
+#         b = (a,a)   
+#         arr = np.zeros(b)
+#         arr[::2 , ::-2] = 1
+#         arr[1::2, 1::2] = 1
+
+
+
+def get_chess(a):    
     b = (a,a)   
     arr = np.zeros(b)
-    arr[::2 , ::-2] = 1
-    arr[1::2, ::2] = 1
-    print(arr)
+    arr[1::2,::2] = 1 
+    arr[::2,1::2] = 1
+    return(arr)
+    
 
-print(get_chess(20))
- 
-
-
-
+print(get_chess(1))
