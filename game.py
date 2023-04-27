@@ -95,3 +95,14 @@ import numpy as np
 # col = table[:,1]
 
 # print(col)
+
+# print(np.random.rand(2, 3, 4, 10, 12, 23))
+
+import numpy as np
+np.random.seed(2021)
+
+simple = np.random.rand()
+randoms = np.random.uniform(-150,2021, size = 120)
+table = np.random.randint(1, 100 , size = (3,2)) 
+
+print(table)
