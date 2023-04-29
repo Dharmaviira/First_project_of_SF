@@ -126,12 +126,12 @@ import numpy as np
 
 
 
-def get_chess(a):    
-    b = (a,a)   
-    arr = np.zeros(b)
-    arr[1::2,::2] = 1 
-    arr[::2,1::2] = 1
-    return(arr)
+# def get_chess(a):    
+#     b = (a,a)   
+#     arr = np.zeros(b)
+#     arr[1::2,::2] = 1 
+#     arr[::2,1::2] = 1
+#     return(arr)
     
 
-print(get_chess(1))
+# print(get_chess(1))
