@@ -137,8 +137,22 @@ import numpy as np
 
 # print(get_chess(1))
 
-# def shuffle_seed (array):
+# Для этого напишите функцию shuffle_seed(<array>),  которая принимает на вход массив из чисел, 
+# генерирует случайное число для seed в диапазоне от 0 до 2**32 - 1 (включительно) и возвращает
+# кортеж: перемешанный с данным seed массив (исходный массив должен оставаться без изменений), 
+# а также seed, с которым этот массив был получен.
+
+
+def shuffle_seed(array):
+     
+    seedrand = np.random.randint(2000)
+    savedseed = seedrand
+    np.random.seed(savedseed)
     
-seedrand = np.random.randint()*1000
-np.random.seed(seedrand)    
-print()
+
+    triplet = np.random.permutation(array)
+
+    return triplet
+
+play_list = (1,2,3,4,5)
+print(shuffle_seed(play_list))
