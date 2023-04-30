@@ -143,17 +143,37 @@ import numpy as np
 # а также seed, с которым этот массив был получен.
 
 
-def shuffle_seed(array):
+# def shuffle_seed(array):
         
-    seedrand = np.random.randint(2**32-1, dtype=np.uint32)
-    np.random.seed(seedrand)
-    triplet = np.random.permutation(array)
+#     seedrand = np.random.randint(2**32-1, dtype=np.uint32)
+#     np.random.seed(seedrand)
+#     triplet = np.random.permutation(array)
 
-    return tuple([triplet,seedrand])    
+#     return tuple([triplet,seedrand])    
 
-play_list = (1,2,3,4,5)
-print(shuffle_seed(play_list))
-
-
+# play_list = (1,2,3,4,5)
+# print(shuffle_seed(play_list))
 
 
+
+# Напишите функцию min_max_dist, которая принимает на вход неограниченное число векторов через запятую. 
+# Гарантируется, что все векторы, которые передаются, одинаковой длины.
+
+# Функция возвращает минимальное и максимальное расстояние между векторами в виде кортежа.
+
+
+def min_max_dist (*vector):
+    vec = vector[0]
+    length = vec.shape[0]
+    for vec in vector:
+        if vec.shape[0] != length:
+            print("Your vectors are not of equal lenght!")
+            break
+        else: 
+             return print(length)
+
+vec1 = np.array([1,2,3])
+vec2 = np.array([4,5,6,4])
+vec3 = np.array([7, 8, 9])
+
+min_max_dist(vec1, vec2, vec3)
