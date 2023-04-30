@@ -162,25 +162,49 @@ import numpy as np
 # Функция возвращает минимальное и максимальное расстояние между векторами в виде кортежа.
 
 
-def min_max_dist (*vector):
+# def min_max_dist (*vector):
+     
+#     length = vector[1].shape[0]
+#     for vec in vector:
+#         if length != vec.shape[0]:
+#             print("One of your vectors are not of equal lenght!")
+#             return
+#     distances = []
+#     num_vectors = len(vector)
+#     for i in range(num_vectors):
+#         for j in range(i+1, num_vectors):
+#             dist = np.linalg.norm(vector[i] - vector[j])
+#             distances.append(dist)
+    
+    
+#         return tuple([np.min(distances), np.max(distances)])
+
+# vec1 = np.array([1,2,3])
+# vec2 = np.array([4,5,6])
+# vec3 = np.array([7,8,9])
+
+# min_max_dist(vec1, vec2, vec3)
+
+
+def any_normal (*vector):
      
     length = vector[1].shape[0]
     for vec in vector:
         if length != vec.shape[0]:
             print("One of your vectors are not of equal lenght!")
             return
-    distances = []
+    normal = []
     num_vectors = len(vector)
     for i in range(num_vectors):
         for j in range(i+1, num_vectors):
-            dist = np.linalg.norm(vector[i] - vector[j])
-            distances.append(dist)
+            dist = np.dot(vector[i], vector[j])
+            normal.append(dist)
+            for a in normal:
+                if a == 0:
+                    return True
+    return False            
     
-    
-    return tuple([np.min(distances), np.max(distances)])
-
 vec1 = np.array([1,2,3])
 vec2 = np.array([4,5,6])
-vec3 = np.array([7,8,9])
 
-min_max_dist(vec1, vec2, vec3)
+print(any_normal(vec1, vec2))
