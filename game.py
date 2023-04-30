@@ -209,10 +209,10 @@ import numpy as np
 
 # print(any_normal(vec1, vec2))
 
-def get_unique_loto(num):
-    arr = []
-    for i in range(num):
-        arr.append(np.random.choice(np.arange(0, 101), size=(5, 5), replace=False))
-    return np.array(arr)
+# def get_unique_loto(num):
+#     arr = []
+#     for i in range(num):
+#         arr.append(np.random.choice(np.arange(0, 101), size=(5, 5), replace=False))
+#     return np.array(arr)
 
-print(get_unique_loto(5))
+# print(get_unique_loto(5))
