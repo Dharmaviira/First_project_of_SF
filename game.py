@@ -186,25 +186,33 @@ import numpy as np
 # min_max_dist(vec1, vec2, vec3)
 
 
-def any_normal (*vector):
+# def any_normal (*vector):
      
-    length = vector[1].shape[0]
-    for vec in vector:
-        if length != vec.shape[0]:
-            print("One of your vectors are not of equal lenght!")
-            return
-    normal = []
-    num_vectors = len(vector)
-    for i in range(num_vectors):
-        for j in range(i+1, num_vectors):
-            dist = np.dot(vector[i], vector[j])
-            normal.append(dist)
-            for a in normal:
-                if a == 0:
-                    return True
-    return False            
+#     length = vector[1].shape[0]
+#     for vec in vector:
+#         if length != vec.shape[0]:
+#             print("One of your vectors are not of equal lenght!")
+#             return
+#     normal = []
+#     num_vectors = len(vector)
+#     for i in range(num_vectors):
+#         for j in range(i+1, num_vectors):
+#             dist = np.dot(vector[i], vector[j])
+#             normal.append(dist)
+#             for a in normal:
+#                 if a == 0:
+#                     return True
+#     return False            
     
-vec1 = np.array([1,2,3])
-vec2 = np.array([4,5,6])
+# vec1 = np.array([1,2,3])
+# vec2 = np.array([4,5,6])
 
-print(any_normal(vec1, vec2))
+# print(any_normal(vec1, vec2))
+
+def get_unique_loto(num):
+    arr = []
+    for i in range(num):
+        arr.append(np.random.choice(np.arange(0, 101), size=(5, 5), replace=False))
+    return np.array(arr)
+
+print(get_unique_loto(5))
