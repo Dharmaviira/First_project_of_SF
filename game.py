@@ -163,17 +163,24 @@ import numpy as np
 
 
 def min_max_dist (*vector):
-    vec = vector[0]
-    length = vec.shape[0]
+     
+    length = vector[1].shape[0]
     for vec in vector:
-        if vec.shape[0] != length:
-            print("Your vectors are not of equal lenght!")
-            break
-        else: 
-             return print(length)
+        if length != vec.shape[0]:
+            print("One of your vectors are not of equal lenght!")
+            return
+    distances = []
+    num_vectors = len(vector)
+    for i in range(num_vectors):
+        for j in range(i+1, num_vectors):
+            dist = np.linalg.norm(vector[i] - vector[j])
+            distances.append(dist)
+    
+    
+    return tuple([np.min(distances), np.max(distances)])
 
 vec1 = np.array([1,2,3])
-vec2 = np.array([4,5,6,4])
-vec3 = np.array([7, 8, 9])
+vec2 = np.array([4,5,6])
+vec3 = np.array([7,8,9])
 
 min_max_dist(vec1, vec2, vec3)
