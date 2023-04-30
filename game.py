@@ -143,16 +143,17 @@ import numpy as np
 # а также seed, с которым этот массив был получен.
 
 
-def shuffle_seed(array):
-     
-    seedrand = np.random.randint(2000)
-    savedseed = seedrand
-    np.random.seed(savedseed)
-    
+# def shuffle_seed(array):
+        
+#     seedrand = np.random.randint(2**32-1, dtype=np.uint32)
+#     np.random.seed(seedrand)
+#     triplet = np.random.permutation(array)
 
-    triplet = np.random.permutation(array)
+#     return tuple([triplet,seedrand])    
 
-    return triplet
+# play_list = (1,2,3,4,5)
+# print(shuffle_seed(play_list))
 
-play_list = (1,2,3,4,5)
-print(shuffle_seed(play_list))
+
+
+
