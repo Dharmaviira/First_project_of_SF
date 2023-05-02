@@ -216,3 +216,7 @@ import numpy as np
 #     return np.array(arr)
 
 # print(get_unique_loto(5))
+
+simplelist = [19, 242, 14, 152, 142, 1000]
+A = sum(simplelist)/ len(simplelist)
+print(A)
