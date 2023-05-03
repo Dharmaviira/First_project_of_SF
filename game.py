@@ -220,3 +220,7 @@ import numpy as np
 # simplelist = [19, 242, 14, 152, 142, 1000]
 # A = sum(simplelist)/ len(simplelist)
 # print(A)
+
+# a = (6**2 + 8**2)
+# b = 24*5
+# print(b)
