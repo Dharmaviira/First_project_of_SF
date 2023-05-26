@@ -13,3 +13,13 @@ I received my first education at the Odessa Academy of Architecture, an HVAC eng
 Worked as a designer and installer of such systems
 In my life I am fond of meditative practices, music, I play the guitar and piano
 Interested in history, politics, and advanced technological progress.
+
+Dhаrmаviira - это одно из моих духовных имён. Так меня называют мою товарищи по йоге. 
+Ещё меня зовут Darshan Mangala мои OSHO друзья, и некоторые знакомые из NewAgе тусовки.
+Я открыт к людям любых религий и атеистам, открыт к общению и дискуссиям, это бывает 
+интерессно и вдохновляюще. 
+
+Dharmaviira - is one of my spiritual names. That's what my yoga buddies call me.
+My name is also Darshan Mangala, my OSHO friends, and some acquaintances from NewAge hangouts.
+I am open to people of all religions and atheists, open to communication and discussion, it happens
+interesting and inspiring.
