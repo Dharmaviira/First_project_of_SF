@@ -1,6 +1,7 @@
 # Hello friends and сolleagues! 
 
 В данном депозитории я собираю некоторые конспекты о процессе обучения Data Science
+
 On this depositories i am collect some notes about learning process to Data Science
 
 ### Меня зовут Дмитрий, я учусь в онлайн школе SkillFactory - на Data Science. 
